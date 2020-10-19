@@ -37,3 +37,13 @@ Since this device will be used to monitor a person under self-quarantine, all th
 ## Target Audience
 
 Target audience of this product is healthcare sector since this device will be used to monitor self-quarantined people. We are planning to introduce this product to healthcare sector through the Ministry of Health. This device will be used by the people under self-quarantine and mobile app will be used by the medical officers who authorised to monitor the self-quarantine people. So, by using this device the medical officers can provide a proper and a responsible service to control spreading covid19 throughout the society.
+
+## Advising Lecturers
+ - Dr. Isuru Nawinne
+ - Dr. Ziyan Marikkar
+ 
+## Links
+
+- [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
+- [Faculty of Engineering](http://eng.pdn.ac.lk/)
+- [University of Peradeniya](https://www.pdn.ac.lk/)

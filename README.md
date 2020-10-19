@@ -27,4 +27,4 @@ Group Members :
   <li>Designed as a wrist band</li>
 </ul>  
   
-  
+  <p>The data taken by this device will be sent to medical officers via a cloud server. Then they will analyse these data by using a mobile app. After analysing the data medical officers can take necessary actions according to the state of the person wearing the device.</p>

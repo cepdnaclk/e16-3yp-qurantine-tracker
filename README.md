@@ -6,7 +6,7 @@ Group Members :
   Nimashi Uthpala  E/16/039  
   Sachini Dissanayaka E/16/087
   
- What is this Quarantine Tracker?
+ ## What is this Quarantine Tracker?
  
   We are going to track the people who are under quarantine due to be associated with a COVID19 patient and haven't proved that he/she hasn't yet 
   a COVID19 patient, but there is the possibility to be so. 

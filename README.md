@@ -30,7 +30,7 @@ Implementation of a wearable device that can be used to track the location and m
   
 The data taken by this device will be sent to medical officers via a cloud server. Then they will analyse these data by using a mobile app. After analysing the data medical officers can take necessary actions according to the state of the person wearing the device.
 
- ![solution picture](Images/solution.png)
+ ![solution picture](Images/HIW.PNG)
 
 ## Implementation
 

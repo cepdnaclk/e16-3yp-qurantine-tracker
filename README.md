@@ -52,4 +52,3 @@ Target audience of this product is healthcare sector since this device will be u
 - [Faculty of Engineering](http://eng.pdn.ac.lk/)
 - [University of Peradeniya](https://www.pdn.ac.lk/)
 
-![Background](Images/quarantine-icon.png)

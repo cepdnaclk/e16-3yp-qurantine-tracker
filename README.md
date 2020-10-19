@@ -13,12 +13,11 @@ As of 16 August 2020, 2,890 confirmed cases have been reported in the country wi
 
 As of 25 March 2020, Sri Lankan authorities have tracked down over 14,000 people who had contacted the identified patients and had ordered self-quarantine for such people. 
 
+![Background](Images/__avoid_public_crowd-512.png)
+
 ## Problem
 
 When putting a person under self-quarantine, medical officers and the police will come to the house where that person lives and advise that person not to go out. Even though the person under self-quarantine is advised not to go out the medical officers cannot be guaranteed that the person will not go out because they do not have a proper method to monitor the people under self-quarantine. If people under self-quarantine do not obey the rules and go out of the home and interact with other people, there will be a risk of exposing other people to the virus if those self-quarantined people are infected.  And also there is no any method to know if the body temperature of a self-quarantined person has increased.
-
-![Problem](Images/__avoid_public_crowd-512.png)
-
 
 ## Solution
 

@@ -13,7 +13,7 @@ As of 16 August 2020, 2,890 confirmed cases have been reported in the country wi
 
 As of 25 March 2020, Sri Lankan authorities have tracked down over 14,000 people who had contacted the identified patients and had ordered self-quarantine for such people. 
 
-![Background](Images/__avoid_public_crowd-512.png)
+![Background](Images/quarantine-icon.png)
 
 ## Problem
 

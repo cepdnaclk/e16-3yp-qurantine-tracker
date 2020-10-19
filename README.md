@@ -1,9 +1,9 @@
 # e16-3yp-qurantine-tracker
 
 ## Group Members 
-  * Tharushi Suwaris E/16/364  e16364@eng.pdn.ac.lk
-  * Nimashi Uthpala  E/16/039  e16039@eng.pdn.ac.lk
-  * Sachini Dissanayaka E/16/087 e16087@eng.pdn.ac.lk
+  * E/16/364 Tharushi Suwaris : e16364@eng.pdn.ac.lk
+  * E/16/039 Nimashi Uthpala : e16039@eng.pdn.ac.lk
+  * E/16/087 Sachini Dissanayaka : e16087@eng.pdn.ac.lk
   
  ## Background
 

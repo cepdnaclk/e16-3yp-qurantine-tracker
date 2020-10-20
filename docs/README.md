@@ -48,8 +48,8 @@ Target audience of this product is healthcare sector since this device will be u
  
 ## Links
 
-- [Department of Computer Engineering](https://www.ce.pdn.ac.lk/)
-- [Faculty of Engineering](https://eng.pdn.ac.lk/)
+- [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
+- [Faculty of Engineering](http://eng.pdn.ac.lk/)
 - [University of Peradeniya](https://www.pdn.ac.lk/)
 
 

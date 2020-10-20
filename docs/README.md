@@ -30,13 +30,13 @@ Implementation of a wearable device that can be used to track the location and m
   
 The data taken by this device will be sent to medical officers via a cloud server. Then they will analyse these data by using a mobile app. After analysing the data medical officers can take necessary actions according to the state of the person wearing the device.
 
- ![How It Works](../Images/HIW.PNG)
+ ![How It Works](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-qurantine-tracker/main/Images/HIW.PNG)
 
 ## Implementation
 
 Since this device will be used to monitor a person under self-quarantine, all the measurements should be precise. For temperature measurements, high precision temperature sensor will be used. The location of the person will be tracked using GPS precise positioning. The self-quarantined person does not allow to remove the device. A notification will be sent to the medical officers when that person is trying to remove the device in unauthorised manner. To detect such unauthorised removals, heartbeat sensor will be used. If the signals from heart beat sensor stops, medical officer will assume that the device is removed from the person who was wearing it. Then medical officer will take necessary action against that person. Since this device is not allowed to remove, recharging the battery will be troublesome. By using higher life time/ rechargeable batteries and by the battery optimization, there is no need of charging this device frequently. For ease of use, this device will be designed as a wrist band and also it will be light weighted.
 
- ![Implmentation](../Images/tintiells.png)
+ ![Implmentation](https://raw.githubusercontent.com/cepdnaclk/e16-3yp-qurantine-tracker/main/Images/tintiells.png)
 
 ## Target Audience
 

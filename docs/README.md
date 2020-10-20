@@ -5,7 +5,6 @@
   * E/16/039 Nimashi Uthpala : e16039@eng.pdn.ac.lk
   * E/16/087 Sachini Dissanayaka : e16087@eng.pdn.ac.lk
   
-  
 ## Background
 
 The COVID19 pandemic, also known as the coronavirus pandemic, is an ongoing global pandemic of coronavirus disease 2019 (COVID19), caused by severe acute respiratory syndrome coronavirus 2 (SARSCoV2). The outbreak was first identified in December 2019 in Wuhan, China. The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30th January 2020 and a pandemic on 11th March. The first case of the virus was confirmed in Sri Lanka on 27th January 2020, after a 44-year-old Chinese woman from Hubei Province in China was admitted to the National Institute of Infection Diseases.

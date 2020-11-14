@@ -4,6 +4,7 @@
 ## Mobile and Web Applications
   * Front end Technology : React
   * Back end technology : Node js
+  * Databse : MongoDB
   
 ## User Interfaces
  ![Home](img/home.png)
@@ -14,5 +15,4 @@
  ![Person](img/1.png)
  ![Data](img/person2.png)
  
-## Database
-  * Technology : MongoDB
+

@@ -11,6 +11,10 @@
   
 ### Power Requirement
 
+ ![Power Requirenments](img/power.PNG)
+
 The node mcu works with 3.3 v so we supply power of 7.4v(power supply) from the betteries to the Vin pin of the node mcu. since the node mcu has an in built voltage regulator we can supply a voltage range of 7-12Vs to Vin
 
 ### Circuit Diagram
+
+ ![Circuit Diagram](img/circuit.PNG)

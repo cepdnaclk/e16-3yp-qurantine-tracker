@@ -6,13 +6,13 @@
   * Back end technology : Node js
   
 ## User Interfaces
- ![Home](img/home.PNG)
- ![Login](img/login.PNG)
- ![User Account](img/add.PNG)
- ![Home](img/home1.PNG) 
- ![NEWS](img/main.PNG)
- ![Person](img/1.PNG)
- ![Data](img/person2.PNG)
+ ![Home](img/home.png)
+ ![Login](img/login.png)
+ ![User Account](img/add.png)
+ ![Home](img/home1.png) 
+ ![NEWS](img/main.png)
+ ![Person](img/1.png)
+ ![Data](img/person2.png)
  
 ## Database
   * Technology : MongoDB

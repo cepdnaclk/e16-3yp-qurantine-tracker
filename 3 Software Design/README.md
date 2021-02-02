@@ -8,7 +8,7 @@
   
 ## User Interfaces
 
- * Note that: These are not our final interface designs.
+ * Note that: These designed have been changed.
 
  ![Home](img/home.png)
  ![Login](img/login.png)

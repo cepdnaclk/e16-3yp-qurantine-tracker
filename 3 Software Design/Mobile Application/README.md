@@ -10,7 +10,7 @@
 
 ![Splash](img/Splash.PNG)
 
-## How it looks 0n a physical device
+## How it looks on a physical device
 
   * Android (version 10)
    ![Physical](img/Physical.PNG)

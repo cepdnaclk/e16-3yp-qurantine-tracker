@@ -8,20 +8,29 @@
   
 ## Login and signup
 
+![Splash](img/Splash.PNG)
+
 ## How it looks 0n a physical device
+
   * Android (version 10)
-   ![Home](img/Physical.PNG)
- 
+   ![Physical](img/Physical.PNG)
+   
 ## Authentication and form validation
 
-### If one of the username and password fields or both are invalid
+* Username, password fields cannot be empty. Otherwise an error message will pop up as a alert.
+* An error will pop up as a alert for invalid login credentials. 
 
-* Username length >=  4 character
+![Error](img/Error.PNG)
+
+* Username length >=  4 character 
 * Password length >=  8 character
-* Otherwise an error message will pop up as a alert
+
+![Authentication](img/Auth.PNG)
+
 * Reset password option
 
 ## For navigation: React navigation library
+
 * Stack navigation: For login and signup screens
 * Drawer navigation : All the other screens
 
@@ -29,6 +38,8 @@ For better user experience two kinds of navigations have been used to navigate t
 
 ## Drawer navigation
 
+![DN](img/DN.PNG)
+
 ## Bottom tab navigator
 
- ![Home](img/home.png)
+ ![MBN](img/MBN.PNG)

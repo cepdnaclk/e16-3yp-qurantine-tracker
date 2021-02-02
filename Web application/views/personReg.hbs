@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../public/css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTracker | Person Register</title>
+    <script type="text/javascript">
+    function formValidate(){
+    if(document.personReg.firstname.value == ""){
+        alert( "Please provide your first name!" );
+        document.personrReg.firstname.focus() ;
+        return false;
+    }else if(document.personReg.lastname.value == ""){
+        alert( "Please provide your last name!" );
+        document.personReg.lastname.focus() ;
+        return false;
+    }else if(document.personReg.id.value == ""){
+        alert( "Please provide NIC!" );
+        document.personReg.id.focus() ;
+        return false;    
+    }else if(document.personReg.barea.value == ""){
+        alert( "Please provide your area of Work!" );
+        document.personReg.barea.focus() ;
+        return false;
+    }else if(document.personReg.tp.value == ""){
+        alert( "Please provide your contact number" );
+        document.personReg.tp.focus() ;
+        return false;
+    }else if(document.personReg.ad1.value == ""){
+        alert( "Please provide a Password!" );
+        document.personReg.ad1.focus() ;
+        return false;
+    }else if(document.personReg.ad2.value == ""){
+        alert( "Please retype your Password!" );
+        document.personReg.ad2.focus() ;
+        return false;
+    }
+    else if(document.personReg.ad3.value == ""){
+        alert( "Please retype your Password!" );
+        document.personReg.ad3.focus() ;
+        return false;
+    }
+    else if(document.personReg.deviceid.value == ""){
+        alert( "Please retype your Password!" );
+        document.personReg.deviceid.focus() ;
+        return false;
+    }
+    else if(document.personReg.trip-start.value == ""){
+        alert( "Please retype your Password!" );
+        document.personReg.trip-start.focus() ;
+        return false;
+    }
+    else if(document.personReg.trip-end.value == ""){
+        alert( "Please retype your Password!" );
+        document.personReg.trip-end.focus() ;
+        return false;
+    }
+    
+}
+</script>
+</head>
+<body class = "main">
+    <div class="box3">
+        <h1>Registration</h1>
+        <form action="/" name="personReg" method = "POST" onsubmit="return(formValidate())">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nic">NIC Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nic" name="id" placeholder="NIC..">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tel">Contact</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tel" name="tp" maxlength="10" minlength="10" placeholder="Your phone number..">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="ad1">Address Line1</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ad1" name="ad1" placeholder="Address Line 1..">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="ad2">Address Line 2</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="ad2" name="ad2" placeholder="Address Line 2..">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="Ad3">Address Line 3</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="Ad3" name="ad3" placeholder="Address Line 3..">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for ="warea">Belong Area</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="barea" name="barea" placeholder="">
+                </div>
+            </div>
+            <br>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="sdate">Start Date</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="sdate" name="trip-start" value="2021-01-01" min="2021-01-01" max="2030-12-31">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="edate">End Date</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="start" name="trip-end" value="2021-01-01" min="2021-01-01" max="2030-12-31">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="device">Device ID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="device" name="deviceid" placeholder="Enter Device Identity..">
+                </div>
+            </div><br>
+            <div class="row">
+                <button type="submit">Register</button>
+            </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

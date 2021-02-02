@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../public/css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QTracker | User Login</title>
+</head>
+<body class = "lr">
+    <div class="box2">
+        <h1>My Welcome Back !!!!</h1><br><br>
+        <form action="/user/login" method = "POST">
+            <div class="row">
+                <div class="col-25">
+                    <label for="mcid">MCID</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mcid" name="loginname" placeholder="Your Medical council registration number..">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pw">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="pw" name="pw" placeholder="enter Password..">
+                    <br><a href="passwordrecovery.html">Forgot Password?</a>
+                </div>
+            </div>
+            
+            <br><br>            
+            <div class="row">
+                <button type="submit">Login</button>
+            </div>
+            </div>
+        </form>
+        <br>
+        
+    </div>
+</body>
+</html>

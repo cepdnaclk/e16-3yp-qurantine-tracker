@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+.col {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.butt{
+    top: 65%;
+    left:57%;
+    right: 20%;
+    position: absolute;
+}
+#button1,#button2{
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    padding: 14px 40px;
+    padding-bottom: 12px;
+    border-radius:8px ;
+    transition-duration: 0.4s;
+    padding-bottom: 12px;
+    display: inline-block;
+    
+}
+#button1:hover{
+    background-color: #08810e; /* Green */
+    color: rgb(8, 8, 8);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+#button2:hover{
+    background-color:#08810e; /* Green */
+    color: rgb(11, 11, 12);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+.h1{
+    
+    color: rgb(131, 29, 29);
+    font-weight: bold;
+    position: absolute;
+    top: 45%;
+    left: 75%;
+    right: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+}

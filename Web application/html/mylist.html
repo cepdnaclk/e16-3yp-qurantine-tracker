@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../public/css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="../public/images/blank.png" width = "200" alt="profile pic">
+            </div>
+            <div class="profile-nav-info">
+                <h3 class = "username">User Name</h3>
+            </div>
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="alert-msg">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-bd">
+            <div class="left-side">
+                the list of persons in my list will be displayed herebe
+                <br><br>
+                <a href="./personReg.html"><button id="button1">Add to List</button></a>
+            </div>
+            <div class = "right-side">
+                <div class="nav">
+                    
+                    <button id="btn1" class = "tablinks1" onclick="openTab(event,'about')">About</button>
+                    <button id="btn1" class = "tablinks1" onclick ="openTab(event,'temp')">Body Temperature</button>
+                    <button id="btn1" class = "tablinks1" onclick ="openTab(event,'location')">Location Details</button>
+                    
+                </div>
+                <div class="profile-body">
+                    <div class="tabcontent" id ="temp">
+                        <h1>Latest Updates in Sri Lanka</h1>
+                    </div>
+                    <div class="tabcontent" id = "about">
+                        <h1>My Details</h1>
+                    </div>
+                    <div class="tabcontent" id = "location">
+                        <h1>My location Details</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openTab(evt, Name) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks1");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(Name).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        </script>
+    <script src="../public/jquery/jquery.js"></script>
+</body>
+</html>

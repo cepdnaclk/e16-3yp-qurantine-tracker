@@ -10,7 +10,7 @@
 
 ## How it looks 0n a physical device
   * Android (version 10)
-   ![Home](img/Physical.png)
+   ![Home](img/Physical.PNG)
  
 ## Authentication and form validation
 

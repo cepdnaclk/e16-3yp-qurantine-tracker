@@ -20,7 +20,7 @@
 * Username, password fields cannot be empty. Otherwise an error message will pop up as a alert.
 * An error will pop up as a alert for invalid login credentials. 
 
-![Error](img/Error.PNG)
+![Error](img/error.PNG)
 
 * Username length >=  4 character 
 * Password length >=  8 character

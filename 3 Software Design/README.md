@@ -4,7 +4,7 @@
 ## Mobile and Web Applications
   * Front end Technology : React
   * Back end technology : Node js
-  * Databse : MongoDB
+  * Databse : MySql
   
 ## User Interfaces
 

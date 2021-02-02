@@ -10,9 +10,7 @@
 
 ## How it looks 0n a physical device
   * Android (version 10)
-  ![Splash](img/IMG_20210202_175855.jpg)
-  ![Login](img/IMG_20210202_180242.jpg)
-  ![Signup](img/IMG_20210202_180300.jpg)
+ 
   
 ## Authentication and form validation
  

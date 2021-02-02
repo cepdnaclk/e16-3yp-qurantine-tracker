@@ -10,11 +10,9 @@
 
 ## How it looks 0n a physical device
   * Android (version 10)
+   ![Home](img/Physical.png)
  
-  
 ## Authentication and form validation
- 
-### Authentication and form validation
 
 ### If one of the username and password fields or both are invalid
 

@@ -41,7 +41,7 @@
         return false;
     }
     if(document.userReg.passw.value != document.userReg.repw.value ){
-        alert("assword miss match...Please check again");
+        alert("Password miss match...Please check again");
         document.userReg.repw.focus() ;
         return false;
     }
@@ -76,7 +76,7 @@
                     <label for="mcid">Medical council Registration Number</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="mcid" name="id" placeholder="your MCID">
+                    <input type="text" id="mcid" maxlength="15" name="id" placeholder="your MCID">
                 </div>
             </div><br>
             <div class="row">
@@ -84,7 +84,7 @@
                     <label for="mail">Email Address</label>
                 </div>
                 <div class="col-75">
-                    <input type="email" id="mail" name="email" placeholder="Your Email address..">
+                    <input type="email" id="mail" maxlength="25" name="email" placeholder="Your Email address..">
                 </div>
             </div><br><br>
             <div class="row">
@@ -92,7 +92,7 @@
                     <label for ="warea">Work Area</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="warea" name="WorkingArea" placeholder="where you work?">
+                    <input type="text" id="warea" maxlength="25" name="WorkingArea" placeholder="where you work?">
                 </div>
             </div>
             <br>

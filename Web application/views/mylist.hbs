@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
@@ -13,7 +14,9 @@
                 <img src="../public/images/blank.png" width = "200" alt="profile pic">
             </div>
             <div class="profile-nav-info">
-                <h3 class = "username">User Name</h3>
+                <h2 class = "username">{{fname}} {{lname}}</h2>
+                <h3 class = "username">{{email}}</h3>
+                <h3 class = "username">{{area}}</h3>
             </div>
             <div class="profile-option">
                 <div class="notification">
@@ -24,9 +27,9 @@
         </div>
         <div class="main-bd">
             <div class="left-side">
-                the list of persons in my list will be displayed herebe
+                
                 <br><br>
-                <a href="./personReg.html"><button id="button1">Add to List</button></a>
+                <a href="./personreg"><button id="button1">Add to List</button></a>
             </div>
             <div class = "right-side">
                 <div class="nav">
@@ -37,11 +40,28 @@
                     
                 </div>
                 <div class="profile-body">
-                    <div class="tabcontent" id ="temp">
+                    <div id ="temp" style="padding: 10; margin-left: 10;">
                         <h1>Latest Updates in Sri Lanka</h1>
+                        {{#each data}}
+                        <br>
+                       
+                        <br>
+                        <br>
+                        <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header">{{this.FirnstName}} {{this.LastName}}</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Start Date {{this.StartDate}}</h5>
+                                <h5 class="card-title">End Date {{this.EndDate}}</h5>
+                                <h5 class="card-title">Belong Area {{this.BelongArea}}</h5>
+                                <h5 class="card-title">Device id {{this.DeviceId}}</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        <br><br><br>
+                        {{/each}}
                     </div>
                     <div class="tabcontent" id = "about">
-                        <h1>My Details</h1>
+                        <h1></h1>
                     </div>
                     <div class="tabcontent" id = "location">
                         <h1>My location Details</h1>

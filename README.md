@@ -42,6 +42,54 @@ Since this device will be used to monitor a person under self-quarantine, all th
 
 Target audience of this product is healthcare sector since this device will be used to monitor self-quarantined people. We are planning to introduce this product to healthcare sector through the Ministry of Health. This device will be used by the people under self-quarantine and mobile app will be used by the medical officers who authorised to monitor the self-quarantine people. So, by using this device the medical officers can provide a proper and a responsible service to control spreading covid19 throughout the society.
 
+# Software 
+## Mobile Application
+  * Technology: React Native 
+
+### For nice appearence: 
+  * React native vector icons
+  * Animated API
+  * Custom fonts from ‘Google Fonts’
+  
+### Login and signup
+
+![Splash](Images/Splash.PNG)
+
+### How it looks on a physical device
+
+  * Android (version 10)
+   ![Physical](Images/Physical.PNG)
+   
+### Authentication and form validation
+
+* Username, password fields cannot be empty. Otherwise an error message will pop up as a alert.
+* An error will pop up as a alert for invalid login credentials. 
+
+![Error](Images/error.PNG)
+
+* Username length >=  4 character 
+* Password length >=  8 character
+
+![Authentication](Images/Auth.PNG)
+
+* Reset password option
+
+### For navigation: React navigation library
+
+* Stack navigation: For login and signup screens
+* Drawer navigation : All the other screens
+
+For better user experience two kinds of navigations have been used to navigate though the different tabs of the mobile app.
+
+### Drawer navigation
+
+![DN](Images/DN.PNG)
+
+### Bottom tab navigator
+
+ ![MBN](Images/MBN.PNG)
+
+
 ## Advising Lecturers
  - Dr. Isuru Nawinne
  - Dr. Ziyan Marikkar

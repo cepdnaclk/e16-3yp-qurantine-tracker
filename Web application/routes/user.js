@@ -1,13 +1,14 @@
 const router = require("express").Router();
+var jwt = require("jsonwebtoken");
 
 const mysqlConnection = require("../db/mysql_connection");
 
 router.post("/login", (req, res) => {
   try {
     var sql =
-      "SELECT * FROM phi WHERE password=" +
+      "SELECT * FROM phi WHERE Password=" +
       mysqlConnection.escape(req.body.pw) +
-      "AND mci=" +
+      "AND MCI=" +
       mysqlConnection.escape(req.body.loginname);
     mysqlConnection.query(
       {
@@ -15,10 +16,19 @@ router.post("/login", (req, res) => {
         timeout: 40000,
       },
       function (error, results, fields) {
-        if (!error) {
+        if (!error && results.length!=0) {
           var json = JSON.parse(JSON.stringify(results));
-          var data = json[0];
-          res.send(data);
+          console.log(json)
+          // var data = json[0];
+          var token = jwt.sign({ data: req.body.loginname }, "secreat key");
+          let options = {
+            path: "/profile",
+            sameSite: true,
+            maxAge: 1000 * 60 * 60 * 5,
+            httpOnly: true,
+          };
+          res.cookie("x-access-token", token, options);
+          res.redirect('/profile/home');
         } else {
           console.log(error);
           res.render("loginpage", { layout: false, data: true });

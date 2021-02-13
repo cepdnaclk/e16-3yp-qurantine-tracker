@@ -5,7 +5,7 @@
   * E/16/039 Nimashi Uthpala : e16039@eng.pdn.ac.lk
   * E/16/087 Sachini Dissanayaka : e16087@eng.pdn.ac.lk
   
-## [Click here to wisit our Website!!!](https://cepdnaclk.github.io/e16-3yp-qurantine-tracker)
+## [Click here to visit our Website!!!](https://cepdnaclk.github.io/e16-3yp-qurantine-tracker)
   
  ## Background
 

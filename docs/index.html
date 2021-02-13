@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qurantine Tracker</title>
+
+    <link href="qt.css" rel="stylesheet" />
+</head>
+<body>
+    <div class = "topic-background" ></div>
+    <div class = "topic">
+        <h1>Quarantine Tracker</h1>
+        <p>A third year students project University of Peradeniya</p>
+    </div>
+    <br>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#team">Team</a>
+        <a href="#introduction">Introduction</a>
+        <a href="#sol">Solution Architecture</a>
+        <a href="#designs">Designs</a>
+        <a href="#testing">Testing</a>
+        <a href="#bugdet">Budget</a>
+        <a href="#con">Conclusion</a>
+
+    </div>
+    <br>
+    
+    <!--Begin of team details-->
+    <div class = "tag">
+        <h2 id = "team">Team Details</h2>
+    </div>
+    <div class = "teamprofile">
+        <h3>Team Members : </h3>    
+        <div class="row">
+            <div class="column">
+                <img src="images/Uthpala.jpg" alt="e16039" style="width:100%">
+                <p class="teammates">Nimashi Uthpala <br> E/16/039 <br>e16039@eng.pd.ac.lk</p>
+            </div>
+            <div class="column">
+                <img src="images/Sachini.jpg" alt="e16087" style="width:100%">
+                <h5></h5>
+                <p class="teammates">Sachini Dissanayaka <br> E/16/087 <br>e16087@eng.pd.ac.lk </p>
+            </div>
+            <div class="column">
+                <img src="images/e16364.jpg" alt="e16364" style="width:100%">
+                <h5></h5>
+                <p class="teammates">Tharushi Suwaris <br> E/16/364 <br>e16364@eng.pd.ac.lk</p>
+            </div>
+        </div>    
+        <h3>Advisors :</h3>
+        <ul>
+            <li>Dr. Isuru Nawinna</li>
+            <li>Dr. Zian Maraikkar</li>
+        </ul>
+        <a href="http://www.ce.pdn.ac.lk/">Department of Computer Enginnering</a><br>
+        <a href="http://eng.pdn.ac.lk/">Faculty of Enginnering</a><br>
+        <a href="https://www.pdn.ac.lk/">University of Peradeniya</a><br>
+    </div>
+
+    <!--Team details end-----begin of about-->
+    <div class = "tag">
+        <h2 id = "introduction">Introduction</h2>
+    </div>
+    <div class = "about">
+        <h3>Backgound </h3>
+        <p>The COVID19 pandemic, also known as the coronavirus pandemic, is an ongoing global pandemic of coronavirus disease 2019 (COVID19), caused by severe acute respiratory syndrome coronavirus 2 (SARSCoV2). The outbreak was first identified in December 2019 in Wuhan, China. The World Health Organization declared the outbreak a Public Health Emergency of International Concern on 30th January 2020 and a pandemic on 11th March. The first case of the virus was confirmed in Sri Lanka on 27th January 2020, after a 44-year-old Chinese woman from Hubei Province in China was admitted to the National Institute of Infection Diseases.
+
+            As of 16 August 2020, 2,890 confirmed cases have been reported in the country with 11 deaths. On 3rd March 2020, the first reported case involving a Sri Lankan origin outside Sri Lanka was reported in Italy. As of 23 March, forty-five quarantine centers have been built in the country by the Sri Lanka Army as a preventive measure to tackle the coronavirus pandemic. Nearly 3,500 people have been under quarantine in 45 quarantine centers which also include 31 foreigners from 14 countries.
+            
+            As of 25 March 2020, Sri Lankan authorities have tracked down over 14,000 people who had contacted the identified patients and had ordered self-quarantine for such people.</p>
+        <h3>Motivation</h3>
+        <p>When putting a person under self-quarantine, medical officers and the police will come to the house where that person lives and advise that person not to go out. Even though the person under self-quarantine is advised not to go out the medical officers cannot be guaranteed that the person will not go out because they do not have a proper method to monitor the people under self-quarantine. If people under self-quarantine do not obey the rules and go out of the home and interact with other people, there will be a risk of exposing other people to the virus if those self-quarantined people are infected</p>
+        <h3>Real world Apllication of the Quarantine Tracking Device</h3>
+        
+        <img src="images/finalProd.png" alt="Final Product" style="width:300px;height:300px; vertical-align: middle;">
+        <p>   
+            The device is designed to be used by the medical authorities to track if the person who is under quarantine (wearing the device) is breaking the law and also to track his/her health; to check if he/she would implementing the symptops of the illness
+            using thier smart phone and reduce the spreading of the virus as much as possible.
+        </p>
+    </div>
+    
+    <!--About end-----begin of solution-->
+    <div class = "tag">
+        <h2 id = "sol">Solution Architecture</h2>
+    </div>
+    <div class = "sol">
+        <p>
+        As a solution we present a band which is wearable by the person who are unde quarantine such that the corresponding data such as body temperaure, the movements of the person and the location
+        will be gathered and send to the mobile app which is used by the medical authority. so they can track and moniter the person keeping their distance and as well as improve the quality of their job.
+        </p>
+        <h3>Features of the device</h3>
+        <ul>
+            <li>Location tracking</li>
+            <li>Can set a virtual fence </li>
+            <li>Detect and monitor the body temperature</li>
+            <li>Unauthorized removal notifications</li>
+            <li>Low battery notification</li>
+                
+        </ul>
+        <img src="images/solution.png" alt="Solution" class = "center" >
+    </div>
+    <div class = "tag">
+        <h2 id = "designs">Hardware And Software Designs</h2>
+    </div>
+    <h2 class = topics > Hardware Design </h2>
+    <h3>Components</h3>
+    <ul>
+        <li>Node MCU 12e module</li>
+        <li>ublox NEO-6M GPS md0153 Module</li>
+        <li>LM 35 temperature module</li>
+        <li>MAX30100 Pulse Oximeter and Heart-Rate Sensor</li>
+        <li>Li Po rechargeable batteries</li>
+        <li>3V mini buzzer</li>
+            
+    </ul>
+    <h3>Power Requirement</h3>
+    <img src="images/power.PNG" alt="Solution" class = "center" >
+    <p class ="sol"> The node mcu works with 3.3 v so we supply power of 7.4v(power supply) from the betteries to the Vin pin of the node mcu.
+        since the node mcu has an in built voltage regulator we can supply a voltage range of 7-12Vs to Vin <br> </p>
+    <h3>  Circuit Diagram</h3>
+    <img src="images/circuit.PNG" alt="Solution" class = "center" >
+    <h2 class = topics > Software Design </h2>
+    <h3>Mobile Application And Website</h3>
+    
+    <h3>User Interfaces of Website</h3>
+    <p>Technology front end : HTML,CSS,Javascript</p>
+    <p>Technology back end : Nodejs</p>
+    <img src="images/Home.png" alt="first page" class = "center" ><br>
+    <img src="images/ULogin.png" alt="login page" class = "center" ><br>
+    <img src="images/URegister.png" alt="user registration" class = "center" ><br>
+    <img src="images/profile.png" alt="home page" class = "center" ><br>
+    <img src="images/PReg.png" alt="news update" class = "center" ><br>
+    <img src="images/PW.png" alt="person adding" class = "center" ><br>
+
+    <h4>User Interfaces of Mobile app</h4>
+    <ul>
+        <li>Technology : React Native</li>
+        <li>Additional Libraries : React NAtive Vector icons, Animated API, Custom Fonts from Google fonts</li>
+        <li>For navigation: React navigation library </li>
+        <li>Stack navigation: For login and signup screens</li>
+        <li>Drawer navigation : All the other screens</li>
+        <li>For better user experience two kinds of navigations have been used to navigate though the different tabs of the mobile app.</li>
+
+    </ul>        
+    <img src="images/mbapp1.JPG" class = "center" ><br>
+    <img src="images/mbapp2.JPG" alt="" class = "center" ><br>
+    <img src="images/mbapp3.JPG" alt="" class = "center" ><br>
+    
+    <h3>Data Handling</h3>
+    <img src="images/data.png" alt="data" class = "center" ><br>
+    <h3>Database</h3>
+    <h4>Technology : MongoDB</h2>
+    <img src="images/Screenshot (136).png" alt="data" class = "center" ><br>
+    <div class = "tag">
+        <h2 id = "testing">Testing</h2>
+    </div>
+    <p> Data validation testing and UI testing is done in frontend of the website in manual basd procedure.
+        User is only allowed to enter data within the given restrictions. They are all indicated to the user when they use
+        the website.
+        <br>
+        In validation of data, the limitations are as follows:
+        <ul>
+            <li>All kinds of Names, ID numbers only should be 25 of character length in maximum. </li>
+            <li>One line an address can be 30 in character length maximally.</li>
+            <li>Contact number should be exactly 10 characters long</li>
+            <li>Password should be more than 8 characters</li>
+        </ul> 
+        <br> 
+        These values were selected based on the database configuration in Backend, making sure the intergrity of data. 
+        In frontend it is tested that the user enters the data as expected and do not allowed to proceed through otherwise.
+        During the tests, nearly 5 test cases were used t ckeck in individual case.
+        <br> The summery of the tests conducted as follows :
+    </p>
+    <img src="images/login.JPG" alt="news update" class = "center" ><br>
+    <img src="images/signup.JPG" alt="person adding" class = "center" ><br>
+    <br>
+    UI testing were conducted testing performance of the website, mainly checked whether the buttons of the pages are working properly and also the links are directed as they are supposed to be.
+    
+    <br><br>
+    <div class = "tag">
+        <h2 id = "bugdet">Budget</h2>
+    </div>
+    <br>
+    <table id = "customers" class = "cus">
+        <tr>
+            <th>Component</th>
+            <th>Price (LKR)</th>
+            <td>Supplier</td>
+        </tr>
+        <tr>
+            <td>NodeMCU </td>
+            <td>665</td>
+            <td><a href="https://tronic.lk/product/nodemcu-esp8266-wifi-esp-12e-cp2101-iot-dev-board-modul">SKYTRONIKS(PVT)LTD</a></td>
+        </tr>
+        <tr>
+            <td>Neo 6m GSP Module </td>
+            <td>1350</td>
+            <td><a href="http://tronic.lk/product/ublox-neo-6m-gps-module-small-sma-connector">SKYTRONIKS(PVT)LTD</a></td>
+        </tr>
+        <tr>
+            <td>LM 35 temperatuer sensor </td>
+            <td>110</td>
+            <td><a href="http://tronic.lk/product/lm35-temperature-sensor">SKYTRONIKS(PVT)LTD</a></td>
+        </tr>
+        <tr>
+            <td>MAX 30100 pulse rate sensor</td>
+            <td>450</td>
+            <td><a href="http://tronic.lk/product/max30100-pulse-oximeter-spo2-and-heart-rate-sensor-modu">SKYTRONIKS(PVT)LTD</a></td>
+        </tr>
+        <tr>
+            <td>3V mini buzzer</td>
+            <td>20</td>
+            <td><a href="http://tronic.lk/product/3v-mini-buzzer">SKYTRONIKS(PVT)LTD</a></td>
+        </tr>
+        <tr>
+            <td>TOTAL</td>
+            <td>3535</td>
+        </tr>
+    </table>
+    <br>
+    <div class = "tag">
+        <h2 id = "con">Conclusion</h2>
+    </div>
+    <div class="git">
+        <a href="https://github.com/cepdnaclk/e16-3yp-qurantine-tracker"> Github repo link</a>
+    </div>
+    
+</body>
+</html>

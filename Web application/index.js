@@ -12,6 +12,7 @@ const server=http.createServer(app)
 const mainRoute=require('./routes/main')
 const userRoute=require('./routes/user')
 const profileRoute=require('./routes/profile')
+const hardwareRout = require('./routes/hard')
 const auth=require('./middlewares/auth')
 
 app.use(bodyparser.json())
@@ -26,6 +27,7 @@ app.set('view engine', 'hbs');
 app.use('/public',express.static(__dirname + '/public'))
 app.use('/main',mainRoute)
 app.use('/user',userRoute)
+app.use('/hardware',hardwareRout)
 app.use('/profile',auth,profileRoute)
 
 

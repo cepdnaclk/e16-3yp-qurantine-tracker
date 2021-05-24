@@ -14,6 +14,7 @@ const userRoute=require('./routes/user')
 const profileRoute=require('./routes/profile')
 const auth=require('./middlewares/auth')
 const nodemcuRoute = require('./routes/nodemcu')
+const hardwareRout = require('./routes/hard')
 
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: true}))
@@ -29,6 +30,7 @@ app.use('/main',mainRoute)
 app.use('/user',userRoute)
 app.use('/profile',auth,profileRoute)
 app.use('/nodemcu',nodemcuRoute)
+app.use('/hardware',hardwareRout)
 
 
 

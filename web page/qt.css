@@ -29,7 +29,11 @@ body,html{
     padding: 20px;
     text-align: center;
 }
-
+.vedio{
+    padding: 20px;
+    position: fixed;
+    left : 50%;
+}
 .topnav {
     background-color: rgb(80, 100, 105);
     overflow: hidden;

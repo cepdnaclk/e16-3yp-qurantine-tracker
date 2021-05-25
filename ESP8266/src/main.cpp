@@ -3,31 +3,20 @@
 #include <ESP8266HTTPClient.h>
 #include <WiFiClient.h>
 #include <ArduinoJson.h>
+#include "LM35.h"
 
-const char *ssid = "SLT-ADSLAF3498";  //ENTER YOUR WIFI ssid
-const char *password = "0312237546";  //ENTER YOUR WIFI password
-
+//wifi credentials
+const char *ssid = "SLT-ADSLAF3498";  
+const char *password = "0312237546";  
+//server
 const char* serverName ="http://192.168.1.103:3000/hardware/datapath";
-
+//demo data
 String DeviceId = "159";
-String temp = "30";
-
-unsigned long lastTime = 0;
-unsigned long timerDelay = 5000;
-
-String payload() {
-    StaticJsonDocument<200> jsonBuffer;
-    //JsonObject& root = jsonBuffer.createObject();
-    jsonBuffer["temp"] = "22";
-    jsonBuffer["DeviceId"] = DeviceId;    
-    String JSONmessage;
-    serializeJson(jsonBuffer,JSONmessage);
-    return JSONmessage;
-}
 
 void setup() {
   Serial.begin(9600);
-
+  measure_temp_init();
+  //connect to wifi network
   WiFi.begin(ssid, password);
   Serial.println("Connecting");
   while(WiFi.status() != WL_CONNECTED) {
@@ -37,43 +26,42 @@ void setup() {
   Serial.println("");
   Serial.print("Connected to WiFi network with IP Address: ");
   Serial.println(WiFi.localIP());
- 
-  Serial.println("Timer set to 5 seconds (timerDelay variable), it will take 5 seconds before publishing the first reading.");
+  
 }
 
 void loop() {
-  if ((millis() - lastTime) > timerDelay) {
+    //temperature reaing
+    float temperature = take_readings();
+    String temp="";
+    temp.concat(temperature);
 
     if(WiFi.status()== WL_CONNECTED){
-      WiFiClient client;
-      HTTPClient http;
-      
-     /* http.begin("https://www.courier.com/blog/how-to-send-emails-with-node-js");
-      int res = http.GET();
-      Serial.println("Respond code :");
-      Serial.println(res);*/
-      http.begin(client,serverName);
 
-      
+      //creating a json object
+      StaticJsonDocument<200> jsonBuffer;
+      jsonBuffer["temp"] = temp ;
+      jsonBuffer["DeviceId"] = DeviceId;    
+      char JSONmessage[300];
+      serializeJson(jsonBuffer,JSONmessage);
+
+      //server start
+      HTTPClient http;
+      http.begin(serverName);      
       http.addHeader("Content-Type", "application/json");
-      // Data to send with HTTP POST
-           
-      // Send HTTP POST request
-      String httpRequestData = payload();
-      //String httpRequestData =String("{\"temp\":\"" + temp + "\",\"DeviceId\":\"" + DeviceId + "\"}") ;
-      Serial.println(httpRequestData);
-      int httpResponseCode = http.POST(httpRequestData);
+  
+      // Send HTTP POST request     
+      Serial.println(JSONmessage);
+      int httpResponseCode = http.POST(JSONmessage);
       Serial.print(http.getString());
       Serial.print("HTTP Response code: ");
       Serial.println(httpResponseCode);
         
-      // Free resources
+      //end
       http.end();
+      delay(300);
     }
     else {
       Serial.println("WiFi Disconnected");
     }
-    lastTime = millis();
-  }
 }
    

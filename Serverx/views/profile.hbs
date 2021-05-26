@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile Page</title>
+        <link rel="stylesheet" href="../public/css/profile.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="profile-header">
+                <div class="profile-img">
+                    <img src="../public/images/blank-2.png" width = "200" alt="profile pic">
+                </div>
+                <div class="profile-nav-info">
+                    <h2 class = "username">{{fname}} {{lname}}</h2>
+                    <h3 class = "username">{{email}}</h3>
+                    <h3 class = "username">{{area}}</h3>
+                </div>
+                <div class="profile-option">
+                    <div class="notification">
+                        <i class="fa fa-bell"></i>
+                        <span class="alert-msg">1</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="main-bd">
+                <div class="left-side">
+                    <a href="/profile/mylist">
+                    <button id= "button1">My List</button></a><br><br>
+                    <button id= "button1">Profile</button><br><br>
+                    <button id= "button1">Sign Out</button><br><br>
+                </div>
+                <div class = "right-side">
+                    <div class="nav">
+                        
+                        <button class = "tablinks" onclick="openTab(event,'LUpdate')">Latest Updates in Sri Lanka</button>
+                        <button class = "tablinks" onclick ="openTab(event,'worldS')">Latest Updates in the World</button>
+                        
+                    </div>
+                    <div class="profile-body">
+                        <div class="tabcontent" id ="LUpdate">
+                            <h1>Local NEWS</h1>
+                            <br>
+                            <div class="up">
+                                <a href="https://www.hpb.health.gov.lk/en" style="text-decoration: none;"><h2 >Promotion Bureau</h2></a><br>
+                                <a href="https://www.worldometers.info/coronavirus/country/sri-lanka/" style="text-decoration: none;"><h2>Worldometers</h2></a><br>
+                                <a href="https://epidemic-stats.com/coronavirus/sri-lanka" style="text-decoration: none;"><h2>Epidemic-stats.com</h2></a>
+                            </div>
+                        </div>
+                        <div class="tabcontent" id = "worldS">
+                            <h1>Global NEWS</h1>
+                            <br>
+                            <div class="up">
+                                <a href="https://covid19.who.int/" style="text-decoration: none;"><h2 >WHO</h2></a><br>
+                                <a href="https://www.worldometers.info/coronavirus/" style="text-decoration: none;"><h2>Worldometers</h2></a><br>
+                                <a href="https://ourworldindata.org/coronavirus" style="text-decoration: none;"><h2>Our World In Data</h2></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function openTab(evt, Name) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(Name).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+            </script>
+        <script src="../public/jquery/jquery.js"></script>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../public/css/profile.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <img src="../public/images/blank-2.png" width = "200" alt="profile pic">
+            </div>
+            <div class="profile-nav-info">
+                <h2 class = "username">{{fname}} {{lname}}</h2>
+                <h3 class = "username">{{email}}</h3>
+                <h3 class = "username">{{area}}</h3>
+            </div>
+            <div class="profile-option">
+                <div class="notification">
+                    <i class="fa fa-bell"></i>
+                    <span class="alert-msg">1</span>
+                </div>
+            </div>
+        </div>
+        <div class="main-bd">
+            
+            <div class = "right-side">
+                
+                <div class="profile-body">
+                    <div id ="temp" style="padding: 10; margin-left: 10;">
+                        <a href="./personreg"><button id="button1">ADD</button></a>
+                        {{#each data}}
+                        <br>
+                        <br>                        
+                        <div class="card text-dark bg-light mb-3" style="max-width: 20rem;">
+                            <div class="card-header" id="n">{{this.PFirstName}} {{this.PLastName}}</div>
+                            <div class="card-body">
+                                <h6 class="card-title">Start Date : {{this.StartDate}}</h6>
+                                <h6 class="card-title">End Date : {{this.EndDate}}</h6>                                
+                                <h6 class="card-title">Device id : {{this.DeviceId}}</h6>
+                                <h6 class="card-title">Contact : {{this.Contact}}</h6>
+                                <br><h5>Temperature Details :</h5>
+                                <h6 class="card-title">Temperature @ 9 AM: {{this.Temp1}}</h6>
+                                <h6 class="card-title">Temperature @ 6 PM: {{this.Temp2}}</h6><br>
+                                <h6 class="card-title" id="p">Wearing Staus : {{this.Pulse}}</h6>
+                                <h6 class="card-title">Location Staus :{{this.location}}</h6><br>
+                                <a href="https://www.google.lk/maps"><button id="location"><i class='fas fa-map-marker-alt' style='font-size:24px;color:rgb(246, 253, 250)'></i></button></a>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                        {{/each}}
+
+
+                    </div>                    
+                </div>
+            </div>
+            <div class="left-side">
+                <div class="left-body">
+                    <h3>Notices<button  id="location" onclick="compareStr()">refresh</button></h3>
+                    {{#each data}}
+                    <p id="demo"></p>
+                    <script>
+                       function compareStr() {
+                            var string1 = document.getElementById('p').innerHTML;
+                            var string2 = "Wearing Staus : Wearing";
+                            var result = string1.localeCompare(string2);
+                            var show = document.getElementById('n').innerHTML + " is not wearing the device";
+                            if(result < 0){
+                                document.getElementById("demo").innerHTML = show ;
+                            }
+                            
+                        }
+
+                    </script>
+
+                    {{/each}}
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+
+    <script src="../public/jquery/jquery.js"></script>
+</body>
+</html>

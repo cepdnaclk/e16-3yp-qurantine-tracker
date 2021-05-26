@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../public/css/register.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script type="text/javascript">
+    function formValidate(){
+    if(document.userReg.firstname.value == ""){
+        alert( "Please provide your first name!" );
+        document.userReg.firstname.focus() ;
+        return false;
+    }else if(document.userReg.lastname.value == ""){
+        alert( "Please provide your last name!" );
+        document.userReg.lastname.focus() ;
+        return false;
+    }else if(document.userReg.id.value == ""){
+        alert( "Please provide your MCID!" );
+        document.userReg.id.focus() ;
+        return false;
+    }else if(document.userReg.email.value == ""){
+        alert( "Please provide your email address!" );
+        document.userReg.email.focus() ;
+        return false;
+    }else if(document.userReg.WorkingArea.value == ""){
+        alert( "Please provide your area of Work!" );
+        document.userReg.WorkingArea.focus() ;
+        return false;
+    }else if(document.userReg.tp.value == ""){
+        alert( "Please provide your contact number" );
+        document.userReg.tp.focus() ;
+        return false;
+    }else if(document.userReg.passw.value == ""){
+        alert( "Please provide a Password!" );
+        document.userReg.passw.focus() ;
+        return false;
+    }else if(document.userReg.repw.value == ""){
+        alert( "Please retype your Password!" );
+        document.userReg.repw.focus() ;
+        return false;
+    }
+    if(document.userReg.passw.value != document.userReg.repw.value ){
+        alert("Password miss match...Please check again");
+        document.userReg.repw.focus() ;
+        return false;
+    }
+    
+}
+</script>
+</head>
+<body class="lr">
+    <div class="box">
+        <h1>REGISTER NOW</h1>
+        <form action="/user/signup" name="userReg" onsubmit="return(formValidate())" method = "POST" >
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mcid">Medical council Registration Number</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="mcid" maxlength="15" name="id" placeholder="Your MCID...">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mail">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="mail" maxlength="25" name="email" placeholder="Your email address...">
+                </div>
+            </div><br><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for ="warea">Work Area</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="warea" maxlength="25" name="WorkingArea" placeholder="Area you work...">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="tel">Contact</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="tel" name="tp" minlength="10" maxlength="10" placeholder="Your phone number...">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pw">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="pw" minlength="8" name="passw" placeholder="Enter a Password...">
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-25">
+                    <label for="retype">Confirm Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="retype" minlength="8" name="repw" placeholder="Re-type the password...">
+                </div>
+            </div><br><br>
+            
+            <div class="row">
+                <button type="submit">Register</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        async function errormsg(status) {
+            if(status){
+            alert( "Sign up failed already have a account.." );
+            document.userReg.firstname.focus() ;
+            }
+        }
+        errormsg({{data}});
+    </script>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* body */
+body{
+    font-family: Papyrus,Courier New, Lucida Console, Monaco, 
+	"Times New Roman", Times, serif;
+	margin: 0px;
+    background-color: #3FA4C4;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    z-index: 998;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 5em; */
+    color: aliceblue;
+    text-shadow: 2px 2px 3px black, 0 0 30px black, 0 0 8px black, 
+    -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    font-weight: bolder;
+}
+
+
+.btn-title{
+    font-size: 2.3rem;
+    margin-bottom: 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.btn-subtitle{
+    font-size: 1.3rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.btn{
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    font-size: 1.4rem;
+    font-weight: bolder;
+    outline: none;
+    box-shadow: inset;
+    font-family: Papyrus,Courier New, Lucida Console, Monaco, 
+	"Times New Roman", Times, serif;
+}
+
+.btn-signin{
+    margin-right: 1em;
+    color: #55ACEE;
+    background-color: transparent;
+    border-radius: 4em;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black, 
+    -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.btn-signin:hover{
+    background-color:#55ACEE;
+    color: black;
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    text-shadow: 1px 1px 2px #55ACEE, 0 0 25px #55ACEE, 0 0 5px #55ACEE, 
+    -1px 0 #55ACEE, 0 1px #55ACEE, 1px 0 #55ACEE, 0 -1px #55ACEE;
+}
+
+.btn-register{
+    margin-left: 1em;
+    color: black;
+    background-color:rgb(253, 185, 60);
+    border-radius: 4em;
+}
+
+.btn-register:hover{
+    background-color:transparent;
+    color: rgb(253, 185, 60);
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+
+
+
+/* 
+nav bar
+*/
+.nav-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fafafa;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #3FA4C4;
+    font-weight: bolder;
+}
+
+
+.nav-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li{
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px #5D70EA, 0 0 5px #5D70EA;
+    margin: 1em;
+    font-weight: 900;
+    transition: all 0.3s ease;
+    padding-top: 1em;
+}
+
+nav ul li:hover{
+    border-top: 4px solid aliceblue;
+    transform: scale(1.2);
+    
+}
+
+.nav-head-title{
+    font-family: 'Stick', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    color: #5D70EA;
+    text-shadow: 1px 1px 2px black, 0 0 25px aliceblue, 0 0 5px aliceblue, 
+    -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.nav-head-subtitle{
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px #5D70EA, 0 0 5px #5D70EA;
+}
+
+
+/* 
+video 
+*/
+
+.video{
+    width: 100%;
+    z-index: -1;
+    position: fixed;
+    height: 100%;
+    object-fit: cover;
+    height: 90%;
+   
+}
+
+
+@media screen and (max-width:700px){
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .nav-head{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-weight: bold;
+        color: black;
+    }
+
+    .nav-head-title{
+        transform: scale(0.9);
+    }
+
+    .nav-head-subtitle{
+        transform: scale(0.9);
+        text-align: center;
+    }
+
+    .btn-container{
+        flex-direction: column;
+    }
+
+    .btn-signin{
+        margin: 0;
+    }
+
+    .btn-register{
+        margin: 0;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width:400px){
+    .nav-head-title{
+        transform: scale(0.6);
+        align-self: center;
+        text-align: center;
+    }
+
+    .nav-head-subtitle{
+        transform: scale(0.6);
+        text-align: center;
+    }
+
+
+}

@@ -233,5 +233,10 @@
         <a href="https://github.com/cepdnaclk/e16-3yp-qurantine-tracker"> Github repo link</a>
     </div>
     
+    <div class="vedio">            
+        <video width="400" controls>
+            <source src="vedio/demo.mp4" type="video/mp4">
+        </video>           
+    </div>
 </body>
 </html>
